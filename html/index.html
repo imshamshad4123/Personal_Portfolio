@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio </title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script src="https://kit.fontawesome.com/f0fdc43464.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="../Images/logo fnl1.png" class="logo" alt="...">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I am <span>Shamshad Alam</span> <br> from Mumbai</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../shamshad_alam.jpg" alt="...">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tilte">About Me</h1>
+                    <p>Software developer with over 1.4 years of experience, specializing in Django and FastAPI, with a strong track
+                        record in web development, data analysis, and API development.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Coursework')">Coursework</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span> <br>Python, JavaScript, Node.js, c++, SQL</li>
+                            <li><span>Framework</span> <br>Express.js, Django</li>
+                            <li><span>Frontend</span> <br>React.js, Html/css/javaScript</li>
+                            <li><span>Databases</span> <br>MySQL, MongoDB</li>
+                            <li><span>Tools</span> <br>Google Cloud Platform</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Datamatics</span> <br>Fast Api and model building development</li>
+                            <li><span>Rentokil PCI</span> <br>Full stack web app development</li>
+                            <li><span>Internship</span> <br>Web development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Coursework">
+                        <ul>
+                            <li><span>Data Structures And Algorithms</span> </li>
+                            <li><span>DSA And Leetcode Excercises</span> </li>
+                            
+                            <!-- <li><span>UI/UX</span> <br>Designing web app interfaces</li>
+                            <li><span>UI/UX</span> <br>Designing web app interfaces</li> -->
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------sevices--------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-tiltle"> My Services</h1>
+            <div class="services-list">
+                <div class="">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>MERN Stack Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sequi impedit reprehenderit
+                        praesentium nihil magni aut et tempore ipsam consectetur dolorum fuga quas suscipit pariatur
+                        tenetur perspiciatis, consequuntur eligendi repellat.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="">
+                    <i class="fa-solid fa-database"></i>
+                    <h2>API Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sequi impedit reprehenderit
+                        praesentium nihil magni aut et tempore ipsam consectetur dolorum fuga quas suscipit pariatur
+                        tenetur perspiciatis, consequuntur eligendi repellat.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="">
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Machine Learning Model Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sequi impedit reprehenderit
+                        praesentium nihil magni aut et tempore ipsam consectetur dolorum fuga quas suscipit pariatur
+                        tenetur perspiciatis, consequuntur eligendi repellat.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------portfolio------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="../Images/work_1.png" alt="">
+                    <div class="layer">
+                        <h3>Income Expense Tracker Web App</h3>
+                        <p>Effectively manages the income and expenses of a person.</p>
+                        <a href="">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="../Images/work_2.png" alt="">
+                    <div class="layer">
+                        <h3>MERN stack Notes web app</h3>
+                        <p>Provides the ease of maintaining, updating,deleting and fetching of notes effectively.</p>
+                        <a href="">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../Images/work_3.png" alt="">
+                    <div class="layer">
+                        <h3>AI document summerizer</h3>
+                        <p>Summerizes a large pdf file using Machine Learning models.</p>
+                        <a href="">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See More</a>
+        </div>
+    </div>
+
+
+    <!-- ------------contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me </h1>
+                    <p><i class="fa-solid fa-envelope"></i>alamshamshad598jobs@gmailcom</p>
+                    <p><i class="fa-solid fa-phone"></i>8879804744</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="../Images/DSA_CompleteNotes.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>copyright is my <i class="fa-solid fa-heart"></i> right</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links')
+        var tabcontents = document.getElementsByClassName('tab-contents')
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link')
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab')
+            }
+
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+        function openmenu(){
+            sidemenu.style.right = '0';
+            
+        }
+        function clodemenu(){
+            sidemenu.style.right = '-200px';
+
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyBhJFGsBxzDZSqILOEcSVcepmEi-5ZDw0_ULBBkCmilOIPi7UmdY1TL0gANypEyMh9/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
